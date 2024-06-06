@@ -2,7 +2,7 @@
 
 import { getServerSession } from "next-auth";
 import prisma from "@/app/libs/db";
-import {authOptions} from "@/app/api/auth/[...nextauth]/route";
+import {authOptions} from "@/app/libs/auth-options";
 
 export async function postData(formData: FormData) {
     "use server";
