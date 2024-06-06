@@ -5,7 +5,7 @@ import NextAuthProvider from "@/app/components/Providers";
 import { getServerSession } from "next-auth";
 import Image from "next/image";
 import {Logout, NavLogin} from "@/app/components/Buttons";
-import {authOptions} from "@/app/api/auth/[...nextauth]/route";
+import {authOptions} from "@/app/libs/auth-options";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
